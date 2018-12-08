@@ -11,7 +11,7 @@ import javax.inject.Inject;
 
 import wxc.android.dagger.demo.R;
 import wxc.android.dagger.demo.base.MyApplication;
-import wxc.android.dagger.demo.modules.beginner.way.DaggerMainComponent;
+import wxc.android.dagger.demo.modules.beginner.way.DaggerBeginnerComponent;
 
 public class BeginnerActivity extends AppCompatActivity {
 
@@ -24,28 +24,26 @@ public class BeginnerActivity extends AppCompatActivity {
     @Inject
     ProgressDialog mProgressDialog;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text);
         // 第一种方式
-        DaggerMainComponent.builder()
+        DaggerBeginnerComponent.builder()
                 .appComponent(MyApplication.sInstance.getAppComponent())
                 .activity(this)
                 .build()
                 .inject(this);
 
 //        // 第二种方式，不推荐：因为需要主动new module对象
-//        DaggerMainComponent2.builder()
+//        DaggerBeginnerComponent2.builder()
 //                .appComponent(MyApplication.sInstance.getAppComponent())
-//                .mainModule2(new MainModule2(this))
+//                .beginnerModule2(new BeginnerModule2(this))
 //                .build()
 //                .inject(this);
 
         TextView contentTv = findViewById(R.id.tv_content);
         contentTv.setText("");
-//        contentTv.append(String.valueOf(application));
 
         mList1.add("A");
         contentTv.append(String.valueOf(mList1));

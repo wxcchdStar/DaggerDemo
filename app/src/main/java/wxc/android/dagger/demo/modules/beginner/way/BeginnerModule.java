@@ -11,7 +11,7 @@ import wxc.android.dagger.demo.base.ActivityScope;
 import wxc.android.dagger.demo.modules.beginner.BeginnerActivity;
 
 @Module
-public abstract class MainModule {
+public abstract class BeginnerModule {
 
     @ActivityScope
     @Provides

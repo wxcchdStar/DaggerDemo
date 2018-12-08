@@ -7,8 +7,8 @@ import wxc.android.dagger.demo.base.AppComponent;
 import wxc.android.dagger.demo.modules.beginner.BeginnerActivity;
 
 @ActivityScope
-@Component(modules = MainModule.class, dependencies = AppComponent.class)
-public interface MainComponent {
+@Component(modules = BeginnerModule.class, dependencies = AppComponent.class)
+public interface BeginnerComponent {
     void inject(BeginnerActivity activity);
 
     @Component.Builder
@@ -18,6 +18,6 @@ public interface MainComponent {
 
         Builder appComponent(AppComponent appComponent);
 
-        MainComponent build();
+        BeginnerComponent build();
     }
 }

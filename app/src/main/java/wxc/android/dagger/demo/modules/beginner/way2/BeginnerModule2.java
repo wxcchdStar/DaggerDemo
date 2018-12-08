@@ -11,11 +11,11 @@ import wxc.android.dagger.demo.base.ActivityScope;
 import wxc.android.dagger.demo.modules.beginner.BeginnerActivity;
 
 @Module
-public class MainModule2 {
+public class BeginnerModule2 {
 
     private BeginnerActivity mActivity;
 
-    public MainModule2(BeginnerActivity activity) {
+    public BeginnerModule2(BeginnerActivity activity) {
         mActivity = activity;
     }
 
