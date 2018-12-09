@@ -1,11 +1,11 @@
-package wxc.android.dagger.demo.modules.simple;
+package wxc.android.dagger.demo.modules.coffeemaker;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import wxc.android.dagger.demo.modules.simple.heater.ElectricHeater;
-import wxc.android.dagger.demo.modules.simple.heater.Heater;
+import wxc.android.dagger.demo.modules.coffeemaker.heater.ElectricHeater;
+import wxc.android.dagger.demo.modules.coffeemaker.heater.Heater;
 
 @Module(includes = PumpModule.class)
 class DripCoffeeModule {

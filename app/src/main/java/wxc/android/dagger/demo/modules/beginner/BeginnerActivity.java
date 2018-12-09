@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import wxc.android.dagger.demo.R;
 import wxc.android.dagger.demo.base.MyApplication;
@@ -20,6 +22,9 @@ public class BeginnerActivity extends AppCompatActivity {
 
     @Inject
     List<String> mList2;
+
+    @Inject
+    Map<String, String> mMap;
 
     @Inject
     ProgressDialog mProgressDialog;
@@ -51,6 +56,9 @@ public class BeginnerActivity extends AppCompatActivity {
 
         mList2.add("B");
         contentTv.append(String.valueOf(mList2));
+        contentTv.append("\n");
+
+        contentTv.append(String.valueOf(mMap));
         contentTv.append("\n");
 
         contentTv.append(String.valueOf(mProgressDialog));

@@ -1,12 +1,12 @@
-package wxc.android.dagger.demo.modules.simple;
+package wxc.android.dagger.demo.modules.coffeemaker;
 
 import android.util.Log;
 
 import javax.inject.Inject;
 
 import dagger.Lazy;
-import wxc.android.dagger.demo.modules.simple.heater.Heater;
-import wxc.android.dagger.demo.modules.simple.pump.Pump;
+import wxc.android.dagger.demo.modules.coffeemaker.heater.Heater;
+import wxc.android.dagger.demo.modules.coffeemaker.pump.Pump;
 
 public class CoffeeMaker {
     private final Lazy<Heater> heater; // Create a possibly costly heater only when we use it.

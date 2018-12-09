@@ -17,8 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.simple.CoffeeMakerActivity" />
+        <activity android:name=".modules.coffeemaker.CoffeeMakerActivity" />
         <activity android:name=".modules.beginner.BeginnerActivity" />
+        <activity android:name=".modules.multibindings.MultibindingsActivity" />
+        <activity android:name=".modules.subcomponent.SubcomponentActivity" />
     </application>
 
 </manifest>

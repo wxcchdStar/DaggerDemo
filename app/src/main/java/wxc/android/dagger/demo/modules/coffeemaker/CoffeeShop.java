@@ -1,4 +1,4 @@
-package wxc.android.dagger.demo.modules.simple;
+package wxc.android.dagger.demo.modules.coffeemaker;
 
 import javax.inject.Singleton;
 

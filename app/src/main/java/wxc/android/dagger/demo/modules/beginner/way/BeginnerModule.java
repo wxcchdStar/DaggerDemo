@@ -5,6 +5,8 @@ import android.app.ProgressDialog;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 import wxc.android.dagger.demo.base.ActivityScope;

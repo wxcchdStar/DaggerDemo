@@ -18,4 +18,16 @@
         android:layout_height="wrap_content"
         android:text="Beginner" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_multibindings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multibindings" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_subcomponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subcomponent" />
+
 </LinearLayout>

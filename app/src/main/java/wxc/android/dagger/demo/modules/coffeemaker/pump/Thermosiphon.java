@@ -1,10 +1,10 @@
-package wxc.android.dagger.demo.modules.simple.pump;
+package wxc.android.dagger.demo.modules.coffeemaker.pump;
 
 import android.util.Log;
 
 import javax.inject.Inject;
 
-import wxc.android.dagger.demo.modules.simple.heater.Heater;
+import wxc.android.dagger.demo.modules.coffeemaker.heater.Heater;
 
 public class Thermosiphon implements Pump {
     private final Heater heater;

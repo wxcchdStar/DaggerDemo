@@ -1,4 +1,4 @@
-package wxc.android.dagger.demo.modules.simple.heater;
+package wxc.android.dagger.demo.modules.coffeemaker.heater;
 
 public interface Heater {
     void on();
