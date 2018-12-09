@@ -13,7 +13,7 @@ import dagger.Module;
 import dagger.Provides;
 import wxc.android.dagger.demo.modules.subcomponent.SubcomponentComponent;
 
-@Module//(subcomponents = SubcomponentComponent.class)
+@Module(subcomponents = SubcomponentComponent.class)
 public class AppModule {
 
     private Application mApplication;

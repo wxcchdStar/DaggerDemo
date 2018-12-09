@@ -1,8 +1,5 @@
 package wxc.android.dagger.demo.modules.subcomponent;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import dagger.Module;
 import dagger.Provides;
 

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import wxc.android.dagger.demo.R;
+import wxc.android.dagger.demo.modules.android.AndroidActivity;
 import wxc.android.dagger.demo.modules.beginner.BeginnerActivity;
 import wxc.android.dagger.demo.modules.coffeemaker.CoffeeMakerActivity;
 import wxc.android.dagger.demo.modules.multibindings.MultibindingsActivity;
@@ -43,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SubcomponentActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_android).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AndroidActivity.class));
             }
         });
     }

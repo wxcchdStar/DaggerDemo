@@ -5,11 +5,12 @@ import java.util.Map;
 import javax.inject.Singleton;
 
 import dagger.Component;
+import dagger.android.support.AndroidSupportInjectionModule;
+import wxc.android.dagger.demo.modules.android.AndroidActivityBindModule;
 import wxc.android.dagger.demo.modules.subcomponent.SubcomponentComponent;
-import wxc.android.dagger.demo.modules.subcomponent.SubcomponentModule;
 
 @Singleton
-@Component(modules = {AppModule.class})
+@Component(modules = {AppModule.class, AndroidSupportInjectionModule.class, AndroidActivityBindModule.class})
 public interface AppComponent {
     void inject(MyApplication application);
 
