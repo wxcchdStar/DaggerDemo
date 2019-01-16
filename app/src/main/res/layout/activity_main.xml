@@ -36,5 +36,10 @@
         android:layout_height="wrap_content"
         android:text="Dagger.Android" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_android2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dagger.Android2" />
 
 </LinearLayout>

@@ -21,7 +21,8 @@
         <activity android:name=".modules.beginner.BeginnerActivity" />
         <activity android:name=".modules.multibindings.MultibindingsActivity" />
         <activity android:name=".modules.subcomponent.SubcomponentActivity" />
-        <activity android:name=".modules.android.AndroidActivity" />
+        <activity android:name=".modules.android.way.AndroidActivity" />
+        <activity android:name=".modules.android.way2.AndroidActivity2" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package wxc.android.dagger.demo.modules.android;
+package wxc.android.dagger.demo.modules.android.way;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
