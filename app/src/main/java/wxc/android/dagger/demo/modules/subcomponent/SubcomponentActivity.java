@@ -12,6 +12,7 @@ import javax.inject.Inject;
 
 import wxc.android.dagger.demo.R;
 import wxc.android.dagger.demo.base.MyApplication;
+import wxc.android.dagger.demo.modules.subcomponent2.Car;
 
 public class SubcomponentActivity extends AppCompatActivity {
 
@@ -23,6 +24,9 @@ public class SubcomponentActivity extends AppCompatActivity {
 
     @Inject
     List<String> mList;
+
+    @Inject
+    Car mCar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,6 +48,9 @@ public class SubcomponentActivity extends AppCompatActivity {
         contentTv.append("\n");
 
         contentTv.append(String.valueOf(mList));
+        contentTv.append("\n");
+
+        contentTv.append(String.valueOf(mCar));
         contentTv.append("\n");
     }
 }

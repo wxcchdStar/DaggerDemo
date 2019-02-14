@@ -23,6 +23,7 @@
         <activity android:name=".modules.subcomponent.SubcomponentActivity" />
         <activity android:name=".modules.android.way.AndroidActivity" />
         <activity android:name=".modules.android.way2.AndroidActivity2" />
+        <activity android:name=".modules.subcomponent2.SonActivity" />
     </application>
 
 </manifest>
